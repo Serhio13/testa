@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/testa/static/css/main.0177f35c.css",
+    "main.js": "/testa/static/js/main.85b573c6.js",
+    "static/js/787.408e7bff.chunk.js": "/testa/static/js/787.408e7bff.chunk.js",
+    "index.html": "/testa/index.html",
+    "main.0177f35c.css.map": "/testa/static/css/main.0177f35c.css.map",
+    "main.85b573c6.js.map": "/testa/static/js/main.85b573c6.js.map",
+    "787.408e7bff.chunk.js.map": "/testa/static/js/787.408e7bff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0177f35c.css",
+    "static/js/main.85b573c6.js"
+  ]
+}
