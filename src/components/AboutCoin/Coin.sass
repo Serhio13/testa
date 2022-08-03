@@ -1,0 +1,92 @@
+.coin
+    &__content
+        overflow: hidden
+        max-width: 740px
+        margin: 1rem auto
+        padding: 0.7rem 1rem
+        display: flex
+        flex-direction: column
+        background-color: var(--background-color)
+        box-shadow: 0px 3px 5px 0px #18191b
+        border-radius: 8px
+        h1,
+        h3,
+        h4,
+        a
+            color: var(--text-color)
+            margin-bottom: 0
+        &-about
+            margin: 0 auto
+    &__rank
+        margin: 3px
+        &-btn
+            border: 1px solid #00ac00
+            box-shadow: 0px 0px 8px #00ac00
+            background-color: #00ac00
+            border-radius: 8px
+            padding: 0.2rem
+    &__info
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        &-heading
+            display: flex
+            align-items: center
+            margin: 1rem 0
+            p
+                font-size: 28px
+        &-price
+            display: flex
+            align-items: center
+            justify-content: center
+            h1
+                margin-top: 0
+        p
+            padding-right: 1rem
+            margin-bottom: 0
+    &__stats
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 2rem
+        width: 100%
+        &-row
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-bottom: 1px solid #808080
+            margin: 0.5rem 0
+            padding-bottom: 0.5rem
+            p
+                margin: 0
+                &:first-child
+                    color: #d3d3d3
+    &__pricechange
+        display: flex
+        justify-content: space-around
+        &-column
+            display: flex
+            flex-direction: column
+            align-items: center
+
+.ant-spin-nested-loading > div > .ant-spin
+    max-height: 100vh
+
+.ant-tooltip-placement-top,
+.ant-tooltip-placement-topLeft,
+.ant-tooltip-placement-topRight
+    padding-bottom: 0
+
+@media (max-width: 480px)
+    .coin
+        &__stats
+            grid-template-columns: repeat(1, 1fr)
+        &__info
+            h1
+                font-size: 20px
+            &-heading
+                p
+                    font-size: 20px
+        &__content
+            margin-top: 0
+            padding-top: 0
+    .container
+        padding-bottom: 0

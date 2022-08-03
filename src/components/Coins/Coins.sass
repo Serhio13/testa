@@ -1,0 +1,92 @@
+.container
+    max-width: 1140px
+    margin: auto
+    padding-bottom: 20px
+    .ant-input
+        background-color: var(--background-color)
+        color: var(--text-color)
+        box-shadow: 0px 1px 4px 0px #18191b
+        border-radius: 8px
+        border-color: #fff
+        width: 200px
+        height: 30px
+        outline: none
+    .ant-btn
+        box-shadow: 0px 1px 4px 0px #18191b
+        border-radius: 8px
+        color: var(--text-color)
+        &:hover
+            color: var(--text-color)
+            border-color: #00ac00
+
+.coin
+    &__heading
+        display: grid
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.5fr
+        align-items: center
+        justify-items: center
+        background-color: var(--background-color)
+        box-shadow: 0px 3px 5px 0px #18191b
+        border-radius: 8px
+        margin: 2rem 1rem
+        padding: 0.7rem 1rem
+        font-weight: 700
+        &.fav
+            grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr
+        p
+            font-size: 16px
+            margin-bottom: 0
+    &__row
+        display: grid
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.5fr
+        align-items: center
+        justify-items: center
+        background-color: var(--background-color)
+        color: var(--text-color)
+        box-shadow: 0px 3px 5px 0px #18191b
+        border-radius: 8px
+        margin: 2rem 1rem
+        padding: 0.7rem 1rem
+        transform: scale(1)
+        transition: 0.3s linear
+        &.fav
+            grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr
+        .red
+            &.anticon
+                svg
+                    fill: #ff6347
+        p
+            margin-bottom: 0
+        &:hover
+            transform: scale(1.01)
+            cursor: pointer
+        &-img
+            display: flex
+            align-items: center
+    &__input
+        max-width: 1140px
+        margin-right: 1em
+        margin-left: 1em
+        display: flex
+        justify-content: space-between
+
+img
+    height: 40px
+    margin-right: 8px
+    width: auto
+
+@media (max-width: 725px)
+    .coin
+        &__heading
+            grid-template-columns: 0.2fr 1fr 1fr 1fr 0.5fr
+            &.fav
+                grid-template-columns: 0.2fr 1fr 1fr 1fr
+            .hide-mobile
+                display: none
+        &__row
+            grid-template-columns: 0.2fr 1fr 1fr 1fr 0.5fr
+            margin: 1rem
+            &.fav
+                grid-template-columns: 0.2fr 1fr 1fr 1fr
+            .hide-mobile
+                display: none
